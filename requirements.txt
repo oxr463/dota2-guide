@@ -1,2 +1,3 @@
 mkdocs
 mkdocs-cordova-plugin
+mkdocs-material

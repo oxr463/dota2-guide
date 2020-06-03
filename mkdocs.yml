@@ -1,0 +1,21 @@
+
+site_name: Dota 2 Guide
+site_url: https://oxr463.github.io/dota2-guide
+site_description: Personal reference for Dota 2
+
+site_author: Lucas Ramage
+
+docs_dir: content
+
+plugins: 
+  - cordova
+
+extra:
+  license: CC0-1.0
+  platform: ['android']
+  package_name: oxr463.dota2.guide
+  version: 0.1.0
+
+repo_name: oxr463/dota2-guide
+repo_url: https://github.com/oxr463/dota2-guide.git
+remote_branch: master

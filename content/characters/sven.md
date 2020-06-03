@@ -4,7 +4,7 @@ name: sven
 
 ## Items
 
-|                  |
+| Equipment        |
 | ---------------- |
 | Blades of Attack |
 | Blade Mail       |

@@ -1,0 +1,44 @@
+name: "GitHub Actions"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use oxr463/setup-cordova
+      uses: oxr463/setup-cordova@0.0.1
+      with:
+        cordova_exec: |
+          apk update && apk upgrade && \
+          apk add gcc \
+                  libffi-dev \
+                  musl-dev \
+                  openssl-dev \
+                  python \
+                  python3-dev \
+                  py3-pip \
+                  py3-setuptools && \
+          python3 -m pip install --upgrade pip && \
+          pip install setuptools && \
+          pip install -r ./requirements.txt && \
+          mkdocs build
+
+    - name: Deploy GitHub Pages
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./site
+
+    - name: Publish GitHub Release
+      uses: fnkr/github-action-ghr@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      env:
+        GHR_PATH: app/app-debug.apk
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

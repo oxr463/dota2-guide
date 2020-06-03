@@ -1,5 +1,6 @@
 ---
 name: sven
+lane: bot
 ---
 
 ## Items

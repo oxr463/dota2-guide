@@ -7,3 +7,7 @@ _Personal reference for Dota 2_
 ## License
 
 This work is licensed under a [Creative Commons Zero v1.0 Universal License](COPYING).
+
+## Reference
+
+- [Liquipedia Dota 2 Wiki](https://liquipedia.net/dota2)

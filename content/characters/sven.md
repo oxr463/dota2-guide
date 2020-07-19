@@ -1,6 +1,8 @@
 ---
 name: sven
-lane: bot
+lane: safe
+role: carry
+complexity: 1
 ---
 
 ## Items

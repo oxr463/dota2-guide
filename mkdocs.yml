@@ -10,11 +10,13 @@ docs_dir: content
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: #a83b28
+    scheme: dota2
 
 plugins: 
   - cordova
+
+extra_css:
+  - assets/css/dota2.css
 
 extra:
   license: CC0-1.0

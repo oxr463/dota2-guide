@@ -1,6 +1,5 @@
-[data-md-color-scheme="dota2"] {
+:root {  
   --md-primary-fg-color:        #A83B28;
-  --md-primary-fg-color--light: #2D2D2B;
-  --md-primary-fg-color--dark:  #939393;
+  --md-default-bg-color:        #2D2D2B;
 }
 

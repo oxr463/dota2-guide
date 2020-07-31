@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Use oxr463/setup-cordova
-      uses: oxr463/setup-cordova@0.0.1
+      uses: oxr463/setup-cordova@0.0.2
       with:
         cordova_exec: |
           apk update && apk upgrade && \

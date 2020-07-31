@@ -14,7 +14,7 @@ jobs:
     - name: Use oxr463/setup-cordova
       uses: oxr463/setup-cordova@0.0.2
       with:
-        cordova_exec: |
+        exec: |
           apk update && apk upgrade && \
           apk add gcc \
                   libffi-dev \

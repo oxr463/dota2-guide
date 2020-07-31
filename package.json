@@ -1,0 +1,12 @@
+{
+  "name": "oxr463.dota2.guide",
+  "displayName": "Dota 2 Guide",
+  "version": "0.1.0",
+  "description": "Personal reference for Dota 2",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Ramage",
+  "license": "CC0-1.0"
+}

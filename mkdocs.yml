@@ -8,12 +8,11 @@ site_author: Lucas Ramage
 docs_dir: content
 
 theme:
+  favicon: assets/img/favicon.ico
+  logo: assets/img/icon.png
   name: material
   palette:
-    scheme: dota2
-
-plugins: 
-  - cordova
+    scheme: slate
 
 extra_css:
   - assets/css/dota2.css
